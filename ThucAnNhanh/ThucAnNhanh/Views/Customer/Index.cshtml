@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    
+
+<script src="~/Scripts/js/LoadGrid/LoadCustomerGrid.js"></script>
+<script src="~/Scripts/js/LoadData/LoadCustomerData.js"></script>
+<script src="~/Scripts/js/LoadGrid/LoadTypeOfCustomerGrid.js"></script>
+<script src="~/Scripts/js/LoadData/LoadTypofCustomerData.js"></script>
+    <script src="~/Scripts/js/LoadForm/AddCustomer.js"></script>
+<script src="~/Scripts/js/LoadForm/AddTypeOfCustomer.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            LoadCustomerGrid();
+            LoadCustomerData();
+            LoadTypeofCustomerGrid();
+            LoadTypeofCustomerData();
+
+        });
+    </script>
+}
+<style>
+    h3{
+        font-family:'Times New Roman';
+    }
+</style>
+
+<h3><b>Quản lí thông tin khách hàng</b></h3>
+<div id="grid" style="width: 100%; height: 500px;"></div>
+<br />
+<h3><b>Quản lí thông tin loại khách hàng</b></h3>
+<div id="gridTypeCustomer" style="width: 50%; height: 250px;"></div>

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+
+
+    <script src="~/Scripts/js/LoadGrid/LoadPromotionGrid.js"></script>
+    <script src="~/Scripts/js/LoadData/LoadPromotionData.js"></script>
+<script src="~/Scripts/js/LoadForm/AddPromotion.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            LoadPromotionGrid();
+            LoadPromotionData();
+        });
+    </script>
+}
+<h3 style="font-family:'Times New Roman';"><b>Quản lí thông tin khuyến mãi</b></h3>
+<div id="grid" style="width: 100%; height: 400px;"></div>
+

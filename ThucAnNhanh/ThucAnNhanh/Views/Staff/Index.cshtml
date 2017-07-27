@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+
+
+    <script src="~/Scripts/js/LoadGrid/LoadStaffGrid.js"></script>
+    <script src="~/Scripts/js/LoadData/LoadStaffData.js"></script>
+<script src="~/Scripts/js/LoadGrid/LoadPositionGrid.js"></script>
+<script src="~/Scripts/js/LoadData/LoadPositionData.js"></script>
+    <script src="~/Scripts/js/LoadForm/AddStaff.js"></script>
+<script src="~/Scripts/js/LoadForm/AddPosition.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            LoadStaffGrid();
+            LoadStaffData();
+            LoadPositionGrid();
+            LoadPositionData();
+
+        });
+    </script>
+}
+
+<style>
+    h3{
+        font-family:'Times New Roman';
+    }
+</style>
+<h3><b>Quản lí thông tin nhân viên</b></h3>
+<div id="grid" style="width: 100%; height: 500px;"></div>
+<br />
+<h3><b>Quản lí thông tin chức vụ</b></h3>
+<div id="gridPosition" style="width: 60%; height: 250px;"></div>
+

@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@section scripts{
+
+
+    <script src="~/Scripts/js/LoadGrid/LoadTaskGrid.js"></script>
+    <script src="~/Scripts/js/LoadData/LoadTaskData.js"></script>
+<script src="~/Scripts/js/LoadForm/AddTask.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            LoadTaskGrid();
+            LoadTaskData();
+        });
+    </script>
+}
+<h3 style="font-family:'Times New Roman';"><b>Quản lí thông tin phân công công việc từng chi nhánh </b></h3>
+<div id="grid" style="width: 100%; height: 500px;"></div>
